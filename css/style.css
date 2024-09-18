@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+
+    /* Dimensions */
+    --width-full: 100%;
+    --width-12col: 1200px;     
+
+    /* Grid Settings */
+    --grid-gap: 10px;
+    --padding-default: 20px;
+
+    /* Colors */
+    --background-color-navigation: #00000088;
+    --background-color-light: #ededed;
+    --background-color-dark-bg: #111111;
+    --primary-color: #bf5b23;
+    --color-white: #ffffff;
+    --color_dark: #373737;
+    --color-light: #ebebeb;
+
+
+    /* color swatch category */
+    --category-seafood: #3E30E2;
+    --category-chicken: #249C8E;
+    --category-meats: #D09189;
+    --category-veg: #298F3F;
+    --category-dessert: #9374EB;
+    --category-misc: #9A951E;
+    --category-pasta: #BF5B23;
+
+
+
+
+}
+
+/* Reset CSS */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dddddd;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color:var(--primary-color);
+  height: auto;
+  width:var(--width-full);
+}
+
+.menu-container {}
+
+.menu-container ul {
+  display: flex;
+}
+
+.menu-container ul li {
+  list-style-type: none;
+  margin:10px;
+}
+
+.hero {
+  width: var(--width-full);
+  background-image: url('https://picsum.photos/1280/650');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:600px;
+
+}
+
+.hero-container {
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: var(--grid-gap);
+  height:100%;
+  width: var(--width-12col);
+  margin:0 auto 0 auto;
+}
+
+.hero-text {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  margin-top:200px
+}
+.hero-search {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  margin-top:60px
+}
