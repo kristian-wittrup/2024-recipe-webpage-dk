@@ -47,30 +47,62 @@ body {
 }
 
 .container {
-  background-color:var(--primary-color);
+  background-color:var(--background-color-dark-bg);
   height: auto;
   width:var(--width-full);
 }
 
-.menu-container {}
+.navigation {
+  background-color: #00000088;
+  position:relative;
+  z-index: 5;
+}
+
+.menu-container {
+
+  width:var(--width-12col);
+  margin:0 auto 0 auto;
+}
 
 .menu-container ul {
   display: flex;
+  font-size: 12px;
+
 }
 
 .menu-container ul li {
   list-style-type: none;
-  margin:10px;
+  margin: 10px 0;  
 }
 
+.menu-container ul li a { 
+  color:var(--color-light);
+  text-decoration:none;
+  text-transform: uppercase;
+  border-right: 1px solid var(--color-light);
+  padding:0 10px 0 10px;
+}
+
+.menu-container ul li a:hover { 
+  color:var(--primary-color);
+}
+
+.menu-container ul li:last-child a {
+  border-right: none;
+
+}
+
+
 .hero {
+  margin-top:-35px;
+
   width: var(--width-full);
   background-image: url('https://picsum.photos/1280/650');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height:600px;
-
+  color:var(--color-light)
 }
 
 .hero-container {
@@ -88,8 +120,36 @@ body {
   grid-row: 1;
   margin-top:200px
 }
+
+.hero-text-small-header {
+  font-size:12px;
+}
+
+.hero-text-big-header {
+  font-size:32px;
+  text-transform: uppercase;
+}
+
+.hero-text-bold {
+  font-weight: 900;
+}
+
+
 .hero-search {
   grid-column: 2 / span 3;
   grid-row: 2;
   margin-top:60px
+}
+
+.search-box {
+  background-color: transparent;
+  padding:10px 40px 10px 20px;
+  border: var(--color-light) 1px solid;
+  border-radius: 5px;
+  outline:none;
+  color:var(--color-light);
+}
+
+.search-box::placeholder {
+  color:var(--color-light);
 }
