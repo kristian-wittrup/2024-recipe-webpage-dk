@@ -153,3 +153,55 @@ body {
 .search-box::placeholder {
   color:var(--color-light);
 }
+
+.todays_recipe {
+  height: fit-content;
+  width:var(--width-full);
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto;
+  gap:var(--grid-gap);
+}
+
+.todays_recipes_content_block_image img {
+    height: 200px;
+    width:var(--width-full);
+    background-size:cover;
+    background-position: center;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+}
+
+.todays_recipes_headline {
+  height:60px;
+  color:var(--color-white); 
+  border-bottom: 1px solid var(--color-white);
+  font-size:37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding: 0 0 20px 0;
+  width:var(--width-12col);
+  margin:70px auto 0 auto;  
+}
+
+.todays_recipes_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  gap:var(--grid-gap);
+  height: fit-content;
+  margin:30px auto 0 auto;
+  box-sizing: border-box;
+  width: var(--width-12col);
+}
+
+.todays_recipes_content_block {
+  background-color:var(--background-color-light);
+  position:relative;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+}
