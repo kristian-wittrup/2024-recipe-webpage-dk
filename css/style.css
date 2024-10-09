@@ -41,6 +41,10 @@
   padding:0;
   box-sizing: border-box;
 }
+/* Global CSS */
+.category-seafood {
+  color: var(--category-seafood);
+}
 
 body {
   background-color: #dddddd;
@@ -48,7 +52,8 @@ body {
 }
 
 .container {
-  background-color:var(--background-color-dark-bg);
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(89,89,89,1) 100%);
   height: auto;
   width:var(--width-full);
 }
@@ -187,6 +192,8 @@ body {
   padding: 0 0 20px 0;
   width:var(--width-12col);
   margin:70px auto 0 auto;  
+
+  text-shadow: 1px 1px 1px var(--primary-color);
 }
 
 .todays_recipes_content {
@@ -205,6 +212,7 @@ body {
   border-radius:5px;
   display:flex;
   flex-direction:column;
+  box-shadow: 1px 1px 3px var(--background-color-dark-bg);
 }
 
 .todays_recipes_content_block_text_top h5 {
@@ -218,6 +226,8 @@ body {
   font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* Fundet her: https://css.glass/ */
 
 .todays_recipes_content_block_text {
   padding:20px;
