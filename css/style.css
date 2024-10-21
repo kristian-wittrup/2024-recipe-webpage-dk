@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-
     /* Dimensions */
     --width-full: 100%;
     --width-12col: 1200px;     
@@ -20,7 +19,6 @@
     --color_dark: #373737;
     --color-light: #ebebeb;
 
-
     /* color swatch category */
     --category-seafood: #3E30E2;
     --category-chicken: #249C8E;
@@ -29,10 +27,6 @@
     --category-dessert: #9374EB;
     --category-misc: #9A951E;
     --category-pasta: #BF5B23;
-
-
-
-
 }
 
 /* Reset CSS */
@@ -278,20 +272,68 @@ body {
   font-size:12px;
 }
 
-[data-category="seafood"] {
-  color: var(--category-seafood);
-}
-
-div[data-category="seafood"] {
-  border-left: 1px solid var(--category-seafood);
-}
-
 #cat-test::after {
   content: attr(data-category);
 }
 
 
+div[data-category="seafood"] {
+  border-left: 1px solid var(--category-seafood);
+}
 
-[data-category="chicken"] {
+p[data-category="seafood"] {
+  color: var(--category-seafood);
+}
+
+div[data-category="chicken"] {
+  border-left: 1px solid var(--category-chicken);
+}
+
+p[data-category="chicken"] {
   color: var(--category-chicken);
+}
+
+div[data-category="pasta"] {
+  border-left: 1px solid var(--category-pasta);
+}
+
+p[data-category="pasta"] {
+  color: var(--category-pasta);
+}
+
+div[data-category="veg"] {
+  border-left: 1px solid var(--category-veg);
+}
+
+p[data-category="veg"] {
+  color: var(--category-veg);
+}
+
+div[data-category="meats"] {
+  border-left: 1px solid var(--category-meats);
+}
+
+p[data-category="meats"] {
+  color: var(--category-meats);
+}
+
+div[data-category="dessert"] {
+  border-left: 1px solid var(--category-dessert);
+}
+
+p[data-category="dessert"] {
+  color: var(--category-dessert);
+}
+
+div[data-category="misc"] {
+  border-left: 1px solid var(--category-misc);
+}
+
+p[data-category="misc"] {
+  color: var(--category-misc);
+}
+
+#fish-icon {
+  color:#33ddff;
+  font-size:40px;
 }
