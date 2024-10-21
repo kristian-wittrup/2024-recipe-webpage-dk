@@ -242,7 +242,7 @@ body {
   display:flex;
   justify-content: space-between;
   margin: 20px 0 0 0;
-  border-left: 1px solid var(--category-seafood);
+  /* border-left: 1px solid var(--category-seafood); */
 }
 
 .todays_recipes_content_block_bottom_area_left {
@@ -276,4 +276,22 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-size:12px;
+}
+
+[data-category="seafood"] {
+  color: var(--category-seafood);
+}
+
+div[data-category="seafood"] {
+  border-left: 1px solid var(--category-seafood);
+}
+
+#cat-test::after {
+  content: attr(data-category);
+}
+
+
+
+[data-category="chicken"] {
+  color: var(--category-chicken);
 }
